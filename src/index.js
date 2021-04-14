@@ -1,5 +1,5 @@
 import goHome from './home';
-import setNavbar from './navbar';
+import { setNavbar, activateBtn } from './navbar';
 import setFooter from './footer';
 
 const setHeader = (() => {
@@ -19,7 +19,7 @@ const setHeader = (() => {
 const setMain = (() => {
   const main = document.createElement('main');
   main.classList.add('main');
-
+  main.setAttribute("id", "main");
   return main;
 })();
 
@@ -29,6 +29,7 @@ const startSite = (() => {
   content.appendChild(setMain());
   content.appendChild(setFooter());
 
+  activateBtn(document.querySelector('.nav-btn'));
   goHome();
 })();
 

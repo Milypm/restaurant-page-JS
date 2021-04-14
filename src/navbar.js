@@ -53,4 +53,7 @@ const activateBtn = ((button) => {
   button.classList.add('active');
 })();
 
-export default setNavbar;
+export {
+  setNavbar,
+  activateBtn
+};
