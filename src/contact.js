@@ -1,4 +1,4 @@
-const setContact = (() => {
+const setContact = () => {
   const contact = document.createElement('div');
   contact.classList.add('contact');
 
@@ -21,11 +21,11 @@ const setContact = (() => {
   contact.appendChild(locationImg);
 
   return contact;
-})();
+};
 
-const goContact = (() => {
+const goContact = () => {
   const main = document.getElementById('main');
   main.appendChild(setContact());
-})();
+};
 
 export default goContact;

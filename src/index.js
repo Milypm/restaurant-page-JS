@@ -1,8 +1,10 @@
+import '../dist/style.css';
+
 import goHome from './home';
 import { setNavbar, activateBtn } from './navbar';
 import setFooter from './footer';
 
-const setHeader = (() => {
+const setHeader = () => {
   const header = document.createElement('header');
   header.classList.add('main-header');
 
@@ -14,16 +16,16 @@ const setHeader = (() => {
   header.appendChild(setNavbar());
 
   return header;
-})();
+};
 
-const setMain = (() => {
+const setMain = () => {
   const main = document.createElement('main');
   main.classList.add('main');
   main.setAttribute("id", "main");
   return main;
-})();
+};
 
-const startSite = (() => {
+const startSite = () => {
   const content = document.getElementById('content');
   content.appendChild(setHeader());
   content.appendChild(setMain());
@@ -31,6 +33,6 @@ const startSite = (() => {
 
   activateBtn(document.querySelector('.nav-btn'));
   goHome();
-})();
+};
 
 startSite();

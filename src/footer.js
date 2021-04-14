@@ -1,4 +1,4 @@
-const setFooter = (() => {
+const setFooter = () => {
   const footer = document.createElement('footer');
   footer.classList.add('footer');
 
@@ -36,6 +36,6 @@ const setFooter = (() => {
   footer.appendChild(socialIcons);
 
   return footer;
-})();
+};
 
 export default setFooter;

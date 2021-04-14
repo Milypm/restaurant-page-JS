@@ -1,7 +1,7 @@
 import goMenu from './menu';
 import goContact from './contact';
 
-const setNavbar = (() => {
+const setNavbar = () => {
   const nav = document.createElement('nav');
 
   const homeBtn = document.createElement('button');
@@ -39,9 +39,9 @@ const setNavbar = (() => {
   nav.appendChild(contactBtn);
 
   return nav;
-})();
+};
 
-const activateBtn = ((button) => {
+const activateBtn = (button) => {
   const navBtns = document.querySelectorAll('.nav-btn');
 
   navBtns.forEach((button) => {
@@ -51,7 +51,7 @@ const activateBtn = ((button) => {
   });
 
   button.classList.add('active');
-})();
+};
 
 export {
   setNavbar,

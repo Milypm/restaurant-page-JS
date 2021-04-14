@@ -1,4 +1,4 @@
-const introHome = (() => {
+const introHome = () => {
   const home = document.createElement('div');
   home.classList.add('home');
 
@@ -10,11 +10,11 @@ const introHome = (() => {
   const homeText = document.createElement('p');
   homeText.classList.add('home-text');
   homeText.textContent = 'The real mexican tacos!'
-})();
+};
 
-const goHome = (() => {
+const goHome = () => {
   const main = document.getElementById('main');
   main.appendChild(introHome());
-})();
+};
 
 export default goHome;
