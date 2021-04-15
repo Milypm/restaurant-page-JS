@@ -7,8 +7,8 @@ const setMenu = () => {
   fullMenu.appendChild(addMenuItem('Gobernador', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
   fullMenu.appendChild(addMenuItem('Trompo set', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
   fullMenu.appendChild(addMenuItem('Sirlon set', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
-  fullMenu.appendChild(addMenuItem('Papa regular', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
-  fullMenu.appendChild(addMenuItem('Papa complete', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
+  fullMenu.appendChild(addMenuItem('Papa sirlon', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
+  fullMenu.appendChild(addMenuItem('Papa trompo', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
   fullMenu.appendChild(addMenuItem('Frijoles a la charra', 'home-made corn or wheat tortilla, cut beef, cheese, avocado'));
 
   return fullMenu;
@@ -24,6 +24,9 @@ const addMenuItem = (dish, ingred) => {
   const dishIngred = document.createElement('p');
   dishIngred.textContent = ingred;
 
+  const dishImg = document.createElement('img');
+  dishImg.src = `../assets/images/${dish.toLowerCase()}.jpg`;
+
   menuItem.appendChild(dishImg);
   menuItem.appendChild(dishName);
   menuItem.appendChild(dishIngred);
@@ -31,15 +34,9 @@ const addMenuItem = (dish, ingred) => {
   return menuItem;
 };
 
-// const getdishImg = ((num) => {
-//   const dishImg = document.createElement('img');
-//   pirataImg.src = '../dist/images/taco-pirata.jpeg';
-//   dishImg.alt = 'taco pirata';
-// })();
-
 const goMenu = () => {
-  const main = document.getElementById('main');
-  main.appendChild(setMenu());
+  const view = document.getElementById('view');
+  view.appendChild(setMenu());
 };
 
 export default goMenu;

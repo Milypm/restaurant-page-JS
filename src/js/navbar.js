@@ -1,3 +1,4 @@
+import goHome from './home';
 import goMenu from './menu';
 import goContact from './contact';
 
@@ -26,7 +27,7 @@ const setNavbar = () => {
 
   const contactBtn = document.createElement('button');
   contactBtn.classList.add('nav-btn');
-  contactBtn.textContent = 'Contact';
+  contactBtn.textContent = 'Contacto';
   contactBtn.addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) {
       activateBtn(contactBtn);

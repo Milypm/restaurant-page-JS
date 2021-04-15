@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Ultra';
+  src: url('../assets/fonts/Ultra-Regular.ttf') format('ttf');
+  font-family: 'Mali-light';
+  src: url('../assets/fonts/Mali-Light.ttf') format('ttf');
+  font-family: 'Mali-bold';
+  src: url('../assets/fonts/Mali-Medium.ttf') format('ttf');
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mali-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: lightseagreen; */
+}
+
+button {
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header {
+  width: 100%;
+  height: 300px;
+}
+
+.title-nav {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whole-header {
+  padding: 0;
+  display: flex;
+  margin-left: 25px;
+}
+
+.fa-hat-cowboy-side {
+  position: relative;
+  font-size: 80px;
+  top: 10px;
+  left: -5px;
+  transform: rotate(-15deg);
+}
+
+.rest-title {
+  font-family: 'Ultra', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  font-size: 100px;
+  left: -100px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  position: relative;
+  top: -270px;
+  right: -1500px;
+  font-size: 33px;
+}
+
+.social-icons i {
+  border-radius: 50%;
+  background: purple;
+  color: #fff;
+}
+
+.social-icons i:hover {
+  opacity: .6;
+}
+
+.fa-facebook-f {
+  font-size: 32px;
+  padding: 9px 15px;
+}
+
+.fa-instagram {
+  padding: 9px 11px;
+}
+
+.fa-twitter {
+  padding: 8px 10px;
+}
+
+nav {
+  padding: 0;
+  top: 250px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.nav-btn {
+  font-size: 35px;
+  border: none;
+  background: transparent;
+}
+
+.view {
+  margin: 50px auto;
+  width: 80%;
+  height: 800px;
+}
+
+.home {
+  width: 80%;
+  position: absolute;
+  height: 800px;
+}
+
+.tacos-main-img {
+  width: 100%;
+  height: 800px;
+  border-radius: 50px;
+  filter: brightness(55%);
+}
+
+.home-text {
+  position: relative;
+  font-size: 70px;
+  font-weight: 600;
+  top: -500px;
+  left: 90px;
+  color: #fff;
+}
+
+footer {
+  margin: 30px auto 0 auto;
+  font-size: 25px;
+  border: 3px solid green;
+}
