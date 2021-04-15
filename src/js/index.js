@@ -39,6 +39,10 @@ const setHeader = () => {
   hat.classList.add('fas');
   hat.classList.add('fa-hat-cowboy-side');
 
+  const chile = document.createElement('i');
+  chile.classList.add('fas');
+  chile.classList.add('fa-pepper-hot');
+
   const restTitle = document.createElement('h1');
   restTitle.classList.add('rest-title');
   restTitle.textContent = 'La taquería';
@@ -47,6 +51,7 @@ const setHeader = () => {
   titleNav.classList.add('title-nav');
 
   wholeHeader.appendChild(hat);
+  wholeHeader.appendChild(chile);
   wholeHeader.appendChild(restTitle);
   socialIcons.appendChild(fbAnchor);
   socialIcons.appendChild(instaAnchor);
@@ -62,8 +67,8 @@ const setHeader = () => {
 const setView = () => {
   const view = document.createElement('view');
   view.classList.add('view');
-  view.setAttribute("id", "view");
-  activateBtn(document.querySelector('.nav-btn'));
+  view.setAttribute('id', 'view');
+  
   return view;
 };
 

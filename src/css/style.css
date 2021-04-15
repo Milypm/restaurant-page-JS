@@ -25,12 +25,14 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .main-header {
   width: 100%;
   height: 300px;
+  padding-bottom: 23px;
+  margin-bottom: 0;
+  background: #b6a129;
 }
 
 .title-nav {
@@ -44,21 +46,30 @@ button {
 .whole-header {
   padding: 0;
   display: flex;
-  margin-left: 25px;
+  color: #fff;
+  margin-left: 65px;
 }
 
 .fa-hat-cowboy-side {
   position: relative;
   font-size: 80px;
-  top: 10px;
-  left: -5px;
+  top: 15px;
+  left: 45px;
   transform: rotate(-15deg);
+}
+
+.fa-pepper-hot {
+  position: relative;
+  font-size: 47px;
+  top: 55px;
+  left: 495px;
 }
 
 .rest-title {
   font-family: 'Ultra', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   font-size: 100px;
+  color: #fff;
   left: -100px;
 }
 
@@ -68,23 +79,23 @@ button {
   width: 200px;
   position: relative;
   top: -270px;
-  right: -1500px;
+  right: -1650px;
   font-size: 33px;
 }
 
 .social-icons i {
   border-radius: 50%;
-  background: purple;
-  color: #fff;
+  background: #fff;
+  color: #837f6c;
 }
 
 .social-icons i:hover {
-  opacity: .6;
+  opacity: .8;
 }
 
 .fa-facebook-f {
   font-size: 32px;
-  padding: 9px 15px;
+  padding: 9px 16px;
 }
 
 .fa-instagram {
@@ -92,7 +103,7 @@ button {
 }
 
 .fa-twitter {
-  padding: 8px 10px;
+  padding: 9px 10px;
 }
 
 nav {
@@ -101,44 +112,96 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 500px;
+  margin-top: -20px;
 }
 
 .nav-btn {
   font-size: 35px;
+  color: #fff;
   border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
   background: transparent;
+  transition: transform 0.3s;
+}
+
+.nav-btn.active {
+  border: 4px #fff solid;
+  border-style: dashed;
+}
+
+.nav-btn:hover {
+  transform: translateY(-20%);
+}
+
+.btn-underline {
+  border-bottom: 2px solid;
 }
 
 .view {
-  margin: 50px auto;
-  width: 80%;
-  height: 800px;
+  padding: 0;
+  margin: 5px 0 7px 0;
+  width: 100%;
+  height: 900px;
+  background: url(../assets/images/Tacos.jpg) no-repeat;
+  filter: brightness(80%);
+  background-position-y: center;
+  background-size: cover;
 }
 
 .home {
-  width: 80%;
-  position: absolute;
-  height: 800px;
-}
-
-.tacos-main-img {
   width: 100%;
-  height: 800px;
-  border-radius: 50px;
-  filter: brightness(55%);
+  height: 900px;
 }
 
 .home-text {
   position: relative;
-  font-size: 70px;
+  top: 180px;
+  left: 720px;
+  font-size: 80px;
   font-weight: 600;
-  top: -500px;
-  left: 90px;
   color: #fff;
+  width: 500px;
+  padding: 20px 20px;
+  background: rgba(71, 70, 49, 0.6);
+}
+
+.full-menu {
+  display: grid;
+  grid-template-areas:
+  'menuItem menuItem',
+  'menuItem menuItem',
+  'menuItem menuItem',
+  'menuItem menuItem';
 }
 
 footer {
-  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  height: 180px;
   font-size: 25px;
-  border: 3px solid green;
+  background: #b6a129;
+  color: #fff;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18%;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.fa-github-alt {
+  font-size: 40px;
+  color: #fff;
+}
+
+.footer-year {
+  width: 11%;
+  margin: -15px auto auto auto;
 }
