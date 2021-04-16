@@ -13,6 +13,7 @@ const introHome = () => {
 
 const goHome = () => {
   const view = document.getElementById('view');
+  view.textContent = '';
   view.appendChild(introHome());
 };
 

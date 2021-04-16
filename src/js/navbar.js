@@ -4,11 +4,11 @@ import goContact from './contact';
 
 const setNavbar = () => {
   const nav = document.createElement('nav');
-
   const homeBtn = document.createElement('button');
   homeBtn.classList.add('nav-btn');
   homeBtn.textContent = 'Home';
   homeBtn.addEventListener('click', (e) => {
+
     if (e.target.classList.contains('active')) return;
     activateBtn(homeBtn);
     goHome();

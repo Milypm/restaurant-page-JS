@@ -5,6 +5,7 @@ const setFooter = () => {
   const myGithub = document.createElement('a');
   myGithub.classList.add('my-github');
   myGithub.href = 'https://github.com/Milypm';
+  myGithub.target = '_blank';
   const mygithubIcon = document.createElement('i');
   mygithubIcon.classList.add('fab');
   mygithubIcon.classList.add('fa-github-alt');

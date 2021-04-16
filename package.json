@@ -24,6 +24,7 @@
     "eslint": "6.8.x",
     "eslint-config-airbnb-base": "14.1.x",
     "eslint-plugin-import": "2.20.x",
+    "file-loader": "^6.2.0",
     "style-loader": "^2.0.0",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",

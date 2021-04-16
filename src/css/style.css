@@ -13,7 +13,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Mali-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* background: lightseagreen; */
 }
 
 button {
@@ -29,14 +28,14 @@ button {
 
 .main-header {
   width: 100%;
-  height: 300px;
-  padding-bottom: 23px;
-  margin-bottom: 0;
+  height: 170px;
+  padding-bottom: -10px;
+  margin-bottom: 3px;
   background: #b6a129;
 }
 
 .title-nav {
-  width: 55%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -47,28 +46,30 @@ button {
   padding: 0;
   display: flex;
   color: #fff;
-  margin-left: 65px;
+  margin-left: 115px;
 }
 
 .fa-hat-cowboy-side {
   position: relative;
-  font-size: 80px;
+  font-size: 40px;
   top: 15px;
-  left: 45px;
+  left: -24px;
   transform: rotate(-15deg);
 }
 
 .fa-pepper-hot {
   position: relative;
-  font-size: 47px;
-  top: 55px;
-  left: 495px;
+  font-size: 25px;
+  top: 27px;
+  left: 197px;
+  color: green;
+  z-index: 2;
 }
 
 .rest-title {
   font-family: 'Ultra', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
-  font-size: 100px;
+  font-size: 50px;
   color: #fff;
   left: -100px;
 }
@@ -76,11 +77,11 @@ button {
 .social-icons {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 140px;
   position: relative;
-  top: -270px;
-  right: -1650px;
-  font-size: 33px;
+  top: -130px;
+  left: 1100px;
+  font-size: 20px;
 }
 
 .social-icons i {
@@ -94,16 +95,16 @@ button {
 }
 
 .fa-facebook-f {
-  font-size: 32px;
-  padding: 9px 16px;
+  font-size: 19px;
+  padding: 7px 12px;
 }
 
 .fa-instagram {
-  padding: 9px 11px;
+  padding: 7px 9px;
 }
 
 .fa-twitter {
-  padding: 9px 10px;
+  padding: 7px;
 }
 
 nav {
@@ -111,27 +112,29 @@ nav {
   top: 250px;
   display: flex;
   justify-content: space-between;
-  width: 500px;
-  margin-top: -20px;
+  width: 270px;
+  margin: 0;
+  margin-top: -15px;
 }
 
 .nav-btn {
-  font-size: 35px;
+  font-size: 20px;
   color: #fff;
   border: none;
   border-radius: 15px;
-  padding: 10px 15px;
+  padding: 5px 10px;
   background: transparent;
   transition: transform 0.3s;
 }
 
 .nav-btn.active {
-  border: 4px #fff solid;
+  border: 1px #fff solid;
   border-style: dashed;
 }
 
 .nav-btn:hover {
-  transform: translateY(-20%);
+  transform: translateY(-10%);
+  opacity: 0.8;
 }
 
 .btn-underline {
@@ -140,68 +143,136 @@ nav {
 
 .view {
   padding: 0;
-  margin: 5px 0 7px 0;
   width: 100%;
-  height: 900px;
-  background: url(../assets/images/Tacos.jpg) no-repeat;
-  filter: brightness(80%);
-  background-position-y: center;
-  background-size: cover;
+  height: 550px;
 }
 
 .home {
   width: 100%;
-  height: 900px;
+  height: 550px;
+  background: url(../assets/images/Tacos.jpg) no-repeat;
+  filter: brightness(80%);
+  background-position-y: center;
+  background-size: cover;
+  border: 2px solid transparent;
 }
 
 .home-text {
   position: relative;
-  top: 180px;
-  left: 720px;
-  font-size: 80px;
-  font-weight: 600;
+  top: 70px;
+  left: 500px;
+  font-size: 55px;
+  font-weight: 500;
   color: #fff;
-  width: 500px;
-  padding: 20px 20px;
+  width: 300px;
+  padding: 20px 10px;
   background: rgba(71, 70, 49, 0.6);
 }
 
 .full-menu {
   display: grid;
-  grid-template-areas:
-  'menuItem menuItem',
-  'menuItem menuItem',
-  'menuItem menuItem',
-  'menuItem menuItem';
+  grid-template-columns: repeat(2, 40%);
+  column-gap: 100px;
+  justify-items: center;
+  width: 65%;
+  height: 550px;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow-y: scroll;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  height: 295px;
+  margin: 10px auto;
+  padding: 20px 17px 0 17px;
+  border: 1px solid #837f6c;
+  border-style: dashed;
+  border-radius: 15px;
+}
+
+.menu-item img {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.menu-item h3 {
+  margin-top: -15px;
+  padding: 5px 10px;
+  background: #b6a129;
+  color: #fff;
+}
+
+.menu-item p {
+  width: 80%;
+  margin-top: -5px;
+  font-size: 13px;
+  text-align: center;
+  color: #837f6c;
+  font-weight: 500;
+}
+
+.contact {
+  width: 60%;
+  height: 500px;
+  margin: 20px auto;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  color: #837f6c;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact p {
+  margin-bottom: 0px;
+}
+
+.contact iframe {
+  width: 550px;
+  height: 350px;
+  margin-top: 15px;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  margin: 0;
   width: 100%;
-  height: 180px;
+  height: 110px;
   font-size: 25px;
   background: #b6a129;
   color: #fff;
+  margin-top: 7px;
 }
 
 .footer-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 18%;
+  width: 16%;
   margin: auto;
-  margin-top: 50px;
-  font-size: 30px;
+  margin-top: 30px;
+  font-size: 17px;
 }
 
 .fa-github-alt {
-  font-size: 40px;
+  font-size: 23px;
   color: #fff;
 }
 
+.fa-github-alt:hover {
+  opacity: 0.8;
+}
+
 .footer-year {
-  width: 11%;
-  margin: -15px auto auto auto;
+  width: 10%;
+  font-size: 15px;
+  margin: -10px auto auto auto;
 }

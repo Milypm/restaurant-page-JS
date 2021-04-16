@@ -46,6 +46,7 @@ const addMenuItem = (dish, ingred, img, alt) => {
 
 const goMenu = () => {
   const view = document.getElementById('view');
+  view.textContent = '';
   view.appendChild(setMenu());
 };
 
