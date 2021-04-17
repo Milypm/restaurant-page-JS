@@ -9,7 +9,7 @@
 > I created this web app for a fictional resturant. It's a single page fully built with JavaScript, with three different modules/views displaying a main page, menu and contact pages. Webpack was used for bundling different modules and styles.
 
 ## Live Project
-You can visit the live project here: [Github page]()
+You can visit the live project here: [Github page](https://milypm.github.io/restaurant-page-JS/)
 
 ## Built With
 - JavaScript
