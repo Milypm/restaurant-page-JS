@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Restaurant web app built with JavaScript
+# Restaurant web app with JavaScript
 
 ![img_1](https://user-images.githubusercontent.com/54684961/115102886-7b7e4580-9f13-11eb-84e7-bdc836de44a0.png)
 ![img_2](https://user-images.githubusercontent.com/54684961/115102913-99e44100-9f13-11eb-863d-2fb1f3260036.png)
 ![img_3](https://user-images.githubusercontent.com/54684961/115102923-a5d00300-9f13-11eb-883d-d772a9ef3b93.png)
 
 
-> I created this web app for a fictional resturant. It's a single page fully built with JavaScript, with three different modules/views displaying a main page, menu and contact pages. Webpack was used for bundling different modules and styles.
+> I created this web app for a fictional restaurant. It's a single page fully built with JavaScript, with three different modules/views displaying a main page, menu and contact pages. Webpack was used for bundling different modules and styles.
 
 ## Live Project
 You can visit the live project here: [Github page]()
