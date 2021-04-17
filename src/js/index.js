@@ -1,8 +1,8 @@
-require('../css/style.css');
-
 import goHome from './home';
 import { setNavbar, activateBtn } from './navbar';
 import setFooter from './footer';
+
+require('../css/style.css');
 
 const setHeader = () => {
   const header = document.createElement('header');
@@ -68,7 +68,7 @@ const setView = () => {
   const view = document.createElement('view');
   view.classList.add('view');
   view.setAttribute('id', 'view');
-  
+
   return view;
 };
 

@@ -2,6 +2,9 @@ const setFooter = () => {
   const footer = document.createElement('footer');
   footer.classList.add('footer');
 
+  const footerSub = document.createElement('div');
+  footerSub.classList.add('footer-sub');
+
   const myGithub = document.createElement('a');
   myGithub.classList.add('my-github');
   myGithub.href = 'https://github.com/Milypm';
@@ -15,14 +18,15 @@ const setFooter = () => {
   siteRights.classList.add('footer-text');
   siteRights.textContent = 'Built by Mily Puente ';
   siteRights.appendChild(myGithub);
-  
+
   const siteYear = document.createElement('p');
   siteYear.classList.add('footer-year');
-  siteYear.textContent = 'Microverse 2021'
+  siteYear.textContent = 'Microverse 2021';
 
-  footer.appendChild(siteRights);
-  footer.appendChild(siteYear);
-  
+  footerSub.appendChild(siteRights);
+  footerSub.appendChild(siteYear);
+  footer.appendChild(footerSub);
+
   return footer;
 };
 

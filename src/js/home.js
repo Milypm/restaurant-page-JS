@@ -4,7 +4,7 @@ const introHome = () => {
 
   const homeText = document.createElement('p');
   homeText.classList.add('home-text');
-  homeText.textContent = 'Los mejores tacos norteños!'
+  homeText.textContent = 'Los mejores tacos norteños!';
 
   home.appendChild(homeText);
 

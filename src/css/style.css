@@ -1,18 +1,13 @@
-@font-face {
-  font-family: 'Ultra';
-  src: url('../assets/fonts/Ultra-Regular.ttf') format('ttf');
-  font-family: 'Mali-light';
-  src: url('../assets/fonts/Mali-Light.ttf') format('ttf');
-  font-family: 'Mali-bold';
-  src: url('../assets/fonts/Mali-Medium.ttf') format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ultra&display=swap');
 
 body {
+  max-width: 1440px;
   width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Mali-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -21,21 +16,24 @@ button {
 
 .content {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .main-header {
+  display: flex;
   width: 100%;
   height: 170px;
   padding-bottom: -10px;
   margin-bottom: 3px;
   background: #b6a129;
+  position: relative;
 }
 
 .title-nav {
-  width: 50%;
+  width: 394px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -43,44 +41,48 @@ button {
 }
 
 .whole-header {
+  width: 394px;
+  height: 100px;
+  position: relative;
   padding: 0;
   display: flex;
   color: #fff;
-  margin-left: 115px;
+  margin: 0 auto;
 }
 
 .fa-hat-cowboy-side {
-  position: relative;
+  position: absolute;
   font-size: 40px;
-  top: 15px;
-  left: -24px;
-  transform: rotate(-15deg);
+  top: 18px;
+  left: 6px;
+  transform: rotate(-24deg);
+  z-index: 2;
 }
 
 .fa-pepper-hot {
-  position: relative;
-  font-size: 25px;
+  position: absolute;
+  font-size: 30px;
   top: 27px;
-  left: 197px;
+  left: 333px;
   color: green;
   z-index: 2;
 }
 
 .rest-title {
   font-family: 'Ultra', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
+  position: absolute;
   font-size: 50px;
   color: #fff;
-  left: -100px;
+  left: 20px;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-between;
   width: 140px;
-  position: relative;
-  top: -130px;
-  left: 1100px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
   font-size: 20px;
 }
 
@@ -91,12 +93,12 @@ button {
 }
 
 .social-icons i:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .fa-facebook-f {
   font-size: 19px;
-  padding: 7px 12px;
+  padding: 7px 11px;
 }
 
 .fa-instagram {
@@ -114,7 +116,8 @@ nav {
   justify-content: space-between;
   width: 270px;
   margin: 0;
-  margin-top: -15px;
+  margin-top: 20px;
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-btn {
@@ -144,55 +147,75 @@ nav {
 .view {
   padding: 0;
   width: 100%;
-  height: 550px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
 }
 
 .home {
   width: 100%;
-  height: 550px;
+  height: 700px;
   background: url(../assets/images/Tacos.jpg) no-repeat;
   filter: brightness(80%);
   background-position-y: center;
   background-size: cover;
   border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-text {
-  position: relative;
-  top: 70px;
-  left: 500px;
-  font-size: 55px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 600;
   color: #fff;
   width: 300px;
-  padding: 20px 10px;
+  height: 300px;
+  padding: 20px 40px;
   background: rgba(71, 70, 49, 0.6);
 }
 
 .full-menu {
-  display: grid;
-  grid-template-columns: repeat(2, 40%);
-  column-gap: 100px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 65%;
-  height: 550px;
+  height: 700px;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0;
   overflow-y: scroll;
+}
+
+.menu-group-title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 30px;
+  justify-items: center;
 }
 
 .menu-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  width: 95%;
-  height: 295px;
-  margin: 10px auto;
-  padding: 20px 17px 0 17px;
+  height: 290px;
+  margin: 0 0 30px auto;
+  padding: 20px 10px 0 10px;
   border: 1px solid #837f6c;
   border-style: dashed;
   border-radius: 15px;
+}
+
+.menu-title {
+  width: min-content;
+  font-size: 22px;
 }
 
 .menu-item img {
@@ -202,25 +225,37 @@ nav {
 }
 
 .menu-item h3 {
-  margin-top: -15px;
+  margin-top: -50px;
   padding: 5px 10px;
   background: #b6a129;
   color: #fff;
+  font-weight: 600;
 }
 
 .menu-item p {
-  width: 80%;
-  margin-top: -5px;
-  font-size: 13px;
+  width: 311px;
+  margin-top: -20px;
+  font-size: 14px;
   text-align: center;
   color: #837f6c;
   font-weight: 500;
 }
 
+.drinks-group {
+  justify-items: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  border: 1px solid #837f6c;
+  border-style: dashed;
+  border-radius: 15px;
+}
+
 .contact {
   width: 60%;
-  height: 500px;
-  margin: 20px auto;
+  height: 530px;
+  margin: 70px auto;
   padding-top: 15px;
   display: flex;
   flex-direction: column;
@@ -232,7 +267,8 @@ nav {
 }
 
 .contact p {
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  font-weight: 500;
 }
 
 .contact iframe {
@@ -243,27 +279,38 @@ nav {
 
 footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 110px;
   font-size: 25px;
   background: #b6a129;
   color: #fff;
-  margin-top: 7px;
+  margin-top: 3.5px;
+}
+
+.footer-sub {
+  width: 400px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-text {
+  width: 190px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 16%;
-  margin: auto;
-  margin-top: 30px;
+  text-align: center;
   font-size: 17px;
+  font-weight: 500;
+  box-sizing: border-box;
 }
 
 .fa-github-alt {
-  font-size: 23px;
+  font-size: 21px;
+  margin-top: 3px;
   color: #fff;
 }
 
@@ -272,7 +319,133 @@ footer {
 }
 
 .footer-year {
-  width: 10%;
+  text-align: center;
+  width: 160px;
+  margin-top: -10px;
   font-size: 15px;
-  margin: -10px auto auto auto;
+}
+
+/************* Media queries: mobile/tablet *************/
+@media (min-width: 768px) and (max-width: 1240px) {
+  .footer-text {
+    width: 190px;
+  }
+
+  .footer-year {
+    width: 160px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 550px) {
+  .social-icons {
+    display: none;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 440px) {
+  .title-nav,
+  .whole-header {
+    width: 375px;
+  }
+
+  .fa-hat-cowboy-side {
+    font-size: 35px;
+    top: 16px;
+    left: 5px;
+  }
+
+  .fa-pepper-hot {
+    font-size: 27px;
+    top: 25px;
+    left: 302px;
+  }
+
+  .rest-title {
+    font-size: 46px;
+    color: #fff;
+    left: 16px;
+    top: 0;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .main-header {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 3px;
+    padding-bottom: 15px;
+    background: #b6a129;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 120px;
+    top: 15px;
+    right: 5px;
+    font-size: 17px;
+  }
+
+  .fa-facebook-f {
+    font-size: 15px;
+    padding: 7px 11px;
+  }
+
+  .fa-instagram {
+    padding: 7px 9px;
+  }
+
+  .fa-twitter {
+    padding: 7px;
+  }
+
+  .home {
+    width: 100%;
+    background-position-y: top;
+    border: none;
+  }
+
+  .home-text {
+    font-size: 40px;
+    width: 150px;
+    height: 200px;
+    padding: 20px 50px 20px 20px;
+  }
+
+  .full-menu {
+    width: 100%;
+  }
+
+  .menu-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drinks-group {
+    align-items: center;
+  }
+
+  .contact {
+    width: 320px;
+    height: 600px;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
+  .contact iframe {
+    width: 320px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+  .full-menu {
+    width: 90%;
+  }
 }
